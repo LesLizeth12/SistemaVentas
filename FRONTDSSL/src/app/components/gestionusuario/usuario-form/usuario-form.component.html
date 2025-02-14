@@ -1,0 +1,91 @@
+<div class="modal-header">
+    <h4> Registro de Usuario</h4>
+    <!-- <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button> -->
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+
+<div class="modal-body">
+    <form [formGroup]="personaForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col">
+                <label for="nombres" class="form-label">DNI</label>
+                <input type="text" class="form-control"  formControlName="dni">
+            </div>
+
+            <div class="col">
+                <label for="email" class="form-label">TIPO USUARIO</label>
+                <select
+                    class="form-select me-2"
+                    style="width: 200px"
+                    id="categoria"
+                    formControlName="id_tipousuario"
+                    (change)="onCategoriaChange($event)"
+                >
+                    <ng-container *ngFor="let categoria of tipoUsuarios">
+                        <option *ngIf="categoria.estado === '1'" [value]="categoria.id">
+                            {{ categoria.nombre }}
+                        </option>
+                    </ng-container>
+                </select>
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="dni" class="form-label">NOMBRE</label>
+                <input type="text" class="form-control" id="dni" formControlName="nombres">
+            </div>
+
+            <div class="col">
+                <label for="telefono" class="form-label">APELLIDOS</label>
+                <input type="text" class="form-control" id="telefono" formControlName="apellidos">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="email" class="form-label">USUARIO</label>
+                <input type="text" class="form-control"  formControlName="username">
+            </div>
+
+            <div class="col">
+                <label for="email" class="form-label">CONTRASE;A</label>
+                <input type="password" class="form-control" id="email" formControlName="password">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="apellidos" class="form-label">TELEFONO</label>
+                <input type="text" class="form-control" id="apellidos" formControlName="telefono">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="direccion" class="form-label">DIRECCION</label>
+                <input type="text" class="form-control" id="direccion" formControlName="direccion">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="email" class="form-label">EMAIL</label>
+                <input type="text" class="form-control"  formControlName="email">
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" 
+            (click)="activeModal.dismiss()"> Cancel</button> -->
+            <button type="button" class="btn btn-secondary" (click)="activeModal.dismiss()"> Cancel</button>
+            <button type="submit" class="btn btn-primary"> Guardar</button>
+        </div>
+
+    </form>
+</div>

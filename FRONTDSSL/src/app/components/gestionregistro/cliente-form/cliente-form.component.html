@@ -1,0 +1,60 @@
+<div class="modal-header">
+    <h4> Registro de Cliente</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+
+<div class="modal-body">
+    <form [formGroup]="clienteForm" (ngSubmit)="onSubmit()">
+
+        <div class="row">
+            <div class="col">
+                <label for="nombres" class="form-label">NOMBRES</label>
+                <input type="text" class="form-control" id="nombres" 
+                formControlName="nombres">
+            </div>
+            <div class="col">
+                <label for="apellidos" class="form-label">APELLIDOS</label>
+                <input type="text" class="form-control" id="apellidos" 
+                formControlName="apellidos">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="dni" class="form-label">DNI</label>
+                <input type="text" class="form-control" id="dni" 
+                formControlName="dni">
+            </div>
+
+            <div class="col">
+                <label for="telefono" class="form-label">TELEFONO</label>
+                <input type="text" class="form-control" id="telefono" 
+                formControlName="telefono">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="direccion" class="form-label">DIRECCION</label>
+                <input type="text" class="form-control" id="direccion" 
+                formControlName="direccion">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="email" class="form-label">EMAIL</label>
+                <input type="text" class="form-control" id="email" 
+                formControlName="email">
+            </div>
+        </div>
+
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" 
+            (click)="activeModal.dismiss()"> Cancel</button>
+            <button type="submit" class="btn btn-primary"> Guardar</button>
+        </div>
+
+    </form>
+</div>
