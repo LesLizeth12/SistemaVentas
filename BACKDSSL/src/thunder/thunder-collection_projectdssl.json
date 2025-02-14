@@ -1,0 +1,130 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "projectdssl",
+    "collectionId": "f3d69269-5bdc-4f52-bfa4-8d1e9435abd0",
+    "dateExported": "2024-12-29T23:47:10.691Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a1a09339-a0b8-49b6-be28-54b827605528",
+            "colId": "f3d69269-5bdc-4f52-bfa4-8d1e9435abd0",
+            "containerId": "",
+            "name": "Categoria",
+            "url": "http://localhost:3000/api/categoria",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-12-29T18:20:21.429Z",
+            "modified": "2024-12-29T23:22:35.232Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Verdurassss\",\n  \"estado\": \"1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c5a65dc2-838a-4cc8-babb-a43a0e099fbd",
+            "colId": "f3d69269-5bdc-4f52-bfa4-8d1e9435abd0",
+            "containerId": "",
+            "name": "Persona",
+            "url": "http://localhost:3000/api/persona",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-12-29T23:20:03.584Z",
+            "modified": "2024-12-29T23:25:39.242Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"dni\": \"33333333\",\n  \"nombres\": \"fff\",\n  \"apellidos\": \"fff\",\n  \"direccion\": \"fff\",\n  \"telefono\": \"fff\",\n  \"email\": \"fff\",\n  \"estado\": \"1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7f0b1bcc-504d-4994-96c0-8862a8adcf3d",
+            "colId": "f3d69269-5bdc-4f52-bfa4-8d1e9435abd0",
+            "containerId": "",
+            "name": "Usuario",
+            "url": "http://localhost:3000/api/usuario",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-12-29T23:20:09.465Z",
+            "modified": "2024-12-29T23:27:25.260Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"ddd\",\n  \"password\": \"ddd\",\n  \"estado\": \"1\",\n  \"id_tipousuario\": 1,\n  \"id_persona\": 1  \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f5d0bc90-acf5-4db1-b5b9-ec59516251bf",
+            "colId": "f3d69269-5bdc-4f52-bfa4-8d1e9435abd0",
+            "containerId": "",
+            "name": "TipoUsuario",
+            "url": "http://localhost:3000/api/tipousuario",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-12-29T23:20:17.814Z",
+            "modified": "2024-12-29T23:29:35.908Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"personal1\",\n  \"estado\": \"1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "1ac4013d-a82f-4d3a-ac6c-b158ca0558a7",
+            "colId": "f3d69269-5bdc-4f52-bfa4-8d1e9435abd0",
+            "containerId": "",
+            "name": "Venta",
+            "url": "http://localhost:3000/api/venta",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-12-29T23:20:37.256Z",
+            "modified": "2024-12-29T23:32:43.071Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"precio_total\": \"2.00\",\n  \"fecha_registro\": \"2024-12-29\",\n  \"estado\": \"1\",\n  \"id_usuario\": 1,\n  \"id_cliente\": 1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6a3ca0cd-20e4-4809-98fa-0001cb7085e0",
+            "colId": "f3d69269-5bdc-4f52-bfa4-8d1e9435abd0",
+            "containerId": "",
+            "name": "DetalleVenta",
+            "url": "http://localhost:3000/api/detalleventa",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-12-29T23:20:45.394Z",
+            "modified": "2024-12-29T23:44:48.034Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cant_prod\": 2,\n  \"importe\": \"1\",\n  \"estado\": \"1\",\n  \"id_venta\": 1,\n  \"id_producto\": 1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "de75e0fa-b714-4043-806e-ce445dbd4156",
+            "colId": "f3d69269-5bdc-4f52-bfa4-8d1e9435abd0",
+            "containerId": "",
+            "name": "Producto",
+            "url": "http://localhost:3000/api/producto",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-12-29T23:20:55.116Z",
+            "modified": "2024-12-29T23:46:41.832Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"peraaaa\",\n    \"precio\": \"0.50\",\n    \"stock\": 100,\n    \"estado\": \"1\",\n    \"id_categoria\": 1\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "ofyKhgk8tFKaZyYDmbP5O6L5D4PkZK909UK3Jv_U9fhy-UmNunLDHHCPN_7J2_pdREMoURrEGCGZbJLbz12rSg"
+}
